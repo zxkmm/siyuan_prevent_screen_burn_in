@@ -1,7 +1,7 @@
 {
-  "name": "plugin-sample-vite-svelte",
-  "author": "frostime",
-  "url": "https://github.com/siyuan-note/plugin-sample-vite-svelte",
+  "name": "siyuan_prevent_screen_burn_in",
+  "author": "zxkmm",
+  "url": "https://github.com/siyuan-note/siyuan_prevent_screen_burn_in",
   "version": "0.3.6",
   "minAppVersion": "3.0.12",
   "backends": [
@@ -21,12 +21,12 @@
     "desktop-window"
   ],
   "displayName": {
-    "en_US": "Plugin sample with vite and svelte",
-    "zh_CN": "插件样例 vite + svelte 版"
+    "en_US": "prevent screen burn-in",
+    "zh_CN": "防止屏幕烧屏"
   },
   "description": {
-    "en_US": "SiYuan plugin sample with vite and svelte",
-    "zh_CN": "使用 vite 和 svelte 开发的思源插件样例"
+    "en_US": "SiYuan plugin that prevents screen burn-in by randomly moving SVG elements.",
+    "zh_CN": "防止屏幕烧屏的插件"
   },
   "readme": {
     "en_US": "README.md",
@@ -38,8 +38,12 @@
     ]
   },
   "keywords": [
+    "siyuan",
     "plugin",
-    "sample",
-    "插件样例"
+    "prevent",
+    "screen",
+    "burn-in",
+    "svg",
+    "randomize"
   ]
 }
