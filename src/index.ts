@@ -94,15 +94,41 @@ export default class SiyuanPreventScreenBurnIn extends Plugin {
     randomizeSvgPositions = () => {
         if (!this.isMobile) return;
         const svgElements = document.querySelectorAll('svg');
+        const breadcrumbButtons = document.querySelectorAll('button.protyle-breadcrumb__icon[data-type="mobile-menu"]');
+        const toolbars = document.querySelectorAll('.toolbar--border');
 
-        svgElements.forEach(svg => {
-            svg.style.transform = ''; // TODO: this might impact smething
+        svgElements.forEach((svg: SVGElement) => {
+            if (svg.classList.contains('b3-list-item__arrow')) {
+                return;
+            }
+
+            svg.style.transform = ''; // TODO: this might impact something
 
             const xShift = Math.floor((Math.random() * 11 - 5) * this.randomPosFactor);
             const yShift = Math.floor((Math.random() * 11 - 5) * this.randomPosFactor);
 
             svg.style.transform = `translate(${xShift}px, ${yShift}px)`;
         });
+
+        toolbars.forEach((toolbar: HTMLElement) => {
+            const yShift = Math.floor((Math.random() * 11 - 5) * this.randomPosFactor);
+            toolbar.style.setProperty('--border-shift-x', '0px');
+            toolbar.style.setProperty('--border-shift-y', `${yShift}px`);
+        });
+
+
+        breadcrumbButtons.forEach((button: HTMLElement) => {
+            button.style.transform = '';
+
+            const xShift = Math.floor((Math.random() * 11 - 5) * this.randomPosFactor);
+            const yShift = Math.floor((Math.random() * 11 - 5) * this.randomPosFactor);
+
+            button.style.transform = `translate(${xShift}px, ${yShift}px)`;
+        });
+
+        
+
+
     }
 
 

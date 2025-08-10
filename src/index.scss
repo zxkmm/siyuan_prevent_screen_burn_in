@@ -1,0 +1,18 @@
+.toolbar--border {
+    position: relative;
+    border-bottom: none;
+    --border-shift-x: 0px;
+    --border-shift-y: 0px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: var(--b3-theme-background-light);
+        transition: transform 0.3s ease;
+        transform: translate(var(--border-shift-x), var(--border-shift-y));
+    }
+}
