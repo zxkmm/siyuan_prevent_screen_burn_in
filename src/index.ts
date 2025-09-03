@@ -111,9 +111,11 @@ export default class SiyuanPreventScreenBurnIn extends Plugin {
         });
 
         toolbars.forEach((toolbar: HTMLElement) => {
-            const yShift = Math.floor((Math.random() * 11 - 5) * this.randomPosFactor);
-            toolbar.style.setProperty('--border-shift-x', '0px');
-            toolbar.style.setProperty('--border-shift-y', `${yShift}px`);
+            //have to hide this until have a better solution because the line hovering there even when doc tree panel os open.
+            // const yShift = Math.floor((Math.random() * 11 - 5) * this.randomPosFactor);
+            // toolbar.style.setProperty('--border-shift-x', '0px');
+            // toolbar.style.setProperty('--border-shift-y', `${yShift}px`);
+            console.log(toolbar);
         });
 
 
@@ -126,7 +128,7 @@ export default class SiyuanPreventScreenBurnIn extends Plugin {
             button.style.transform = `translate(${xShift}px, ${yShift}px)`;
         });
 
-        
+
 
 
     }
