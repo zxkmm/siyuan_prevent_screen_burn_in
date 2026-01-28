@@ -34,28 +34,18 @@ export default class SiyuanPreventScreenBurnIn extends Plugin {
         this.settingUtils.addItem({
             key: "ramdomPosTime",
             value: 100,
-            type: "slider",
+            type: "textinput",
             title: this.i18n.changePosInterval,
             description: this.i18n.changePosIntervalDesc,
-            direction: "column",
-            slider: {
-                min: 1,
-                max: 1000,
-                step: 1,
-            }
+            direction: "column"
         });
         this.settingUtils.addItem({
             key: "ramdomPosFactor",
             value: 0.2,
-            type: "slider",
+            type: "textinput",
             title: this.i18n.ramdomPosFactor,
             description: this.i18n.ramdomPosFactorDesc,
-            direction: "column",
-            slider: {
-                min: 0,
-                max: 1,
-                step: 0.01,
-            }
+            direction: "column"
         });
 
         this.settingUtils.addItem({
