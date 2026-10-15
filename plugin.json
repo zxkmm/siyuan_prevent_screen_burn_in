@@ -2,7 +2,7 @@
   "name": "siyuan_prevent_screen_burn_in",
   "author": "zxkmm",
   "url": "https://github.com/siyuan-note/siyuan_prevent_screen_burn_in",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "minAppVersion": "3.0.12",
   "backends": [
     "windows",
@@ -29,12 +29,13 @@
     "zh_CN": "防止屏幕烧屏的插件"
   },
   "readme": {
+    "default": "README.md",
     "en_US": "README.md",
     "zh_CN": "README_zh_CN.md"
   },
   "funding": {
     "custom": [
-      ""
+      "https://pipe.b3log.org/blogs/zxkmm/articles/2025/02/08/1738993480704"
     ]
   },
   "keywords": [
