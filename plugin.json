@@ -1,8 +1,8 @@
 {
   "name": "siyuan_prevent_screen_burn_in",
   "author": "zxkmm",
-  "url": "https://github.com/siyuan-note/siyuan_prevent_screen_burn_in",
-  "version": "0.0.8",
+  "url": "https://github.com/zxkmm/siyuan_prevent_screen_burn_in",
+  "version": "0.0.9",
   "minAppVersion": "3.0.12",
   "backends": [
     "windows",
